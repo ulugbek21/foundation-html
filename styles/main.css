@@ -1,0 +1,41 @@
+body {
+    background-color: azure;
+    max-width: 70%;
+    margin: auto;
+    box-shadow: 0 0 5px 2px lightgray;
+    padding: 5px 10px;
+}
+
+.first-text {
+    color: brown;
+}
+
+nav>ul>li {
+    list-style-type: none;
+    float: right;
+    margin-right: 30px;
+}
+
+nav>ul>li:hover {
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    padding: 2px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.active-page {
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    padding: 2px;
+    opacity: 0.5;
+    cursor: none;
+}
