@@ -124,7 +124,7 @@ buttonMinus.addEventListener("click", function () {
     if (!lastButtonWasOperation) {
         finalResult -= parseInt(currentValue)
     }
-    
+
     currentValue = ""
     operation = "-"
     lastButtonWasOperation = true
@@ -147,3 +147,96 @@ buttonEqual.addEventListener("click", function () {
     finalResult = 0
     equalPressed = true
 })
+
+// Array, Objects, For loop, While loop
+
+students = ["Zamir", "Rustam", "Shaxobiddin", "Dadaxon", "Ahmadjon", "Ahadillo", "Abdulloh"]
+
+// For loop
+for (i = 0; i < students.length; i++) {
+    // console.log(students[i])
+}
+
+// console.log("")
+
+// foreach
+students.forEach(function (element) {
+    // console.log(element)
+})
+
+// console.log("")
+
+// for of
+for (const student of students) {
+    // console.log(student)
+}
+
+// console.log("")
+
+// for in
+for (const i in students) {
+    // console.log(students[i])
+}
+
+console.log("")
+
+// while
+i = 0
+while (i < students.length) {
+    // console.log(students[i])
+    i++
+}
+
+
+// Pseudocode
+// 1. Iterate from 0 to 100
+// 2. If number is divisible by 3, print "Fizz"
+// 3. Else if number is divisible by 5, print "Buzz"
+// 4. Else if number is divisible by 3 and by 5, print "FizzBuzz"
+for (let i = 0; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        // console.log(i, "FizzBuzz")
+    } else if (i % 3 == 0) {
+        // console.log(i, "Fizz")
+    } else if (i % 5 == 0) {
+        // console.log(i, "Buzz")
+    }
+}
+
+
+// Objects
+var dict = {
+    "Nexia": {
+        "Wheels": 4,
+        "Color": "Gray",
+        "Doors": 4,
+        "Owner": {
+            "FirstName": "John",
+            "SecondName": "Doe"
+        }
+    },
+    "Laccetti": {
+        "Wheels": 4,
+        "Color": "Black",
+        "Doors": 4
+    },
+    "Bicycle": {
+        "Wheels": 2,
+        "Color": "White",
+        "Doors": null
+    }
+}
+
+for (const key in dict) {
+    for (const attribute in dict[key]) {
+        console.log(key, attribute, "=", dict[key][attribute])
+    }
+}
+
+
+var newArray = ["String", 10, true, {
+    "Nexia": 5,
+    "Lacetti": 12
+}]
+
+console.log(newArray)
