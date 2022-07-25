@@ -39,3 +39,8 @@ nav a {
     opacity: 0.5;
     cursor: none;
 }
+
+#calculation-result {
+    border: 1px black solid;
+    padding: 5px 3px;
+}
