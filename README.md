@@ -1,1 +1,1 @@
-# UAcademy HTML Crash Course
+# UAcademy HTML/CSS/JS Crash Course
